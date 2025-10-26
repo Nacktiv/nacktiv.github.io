@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willkommen auf meiner Seite</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,10 +18,15 @@
             padding: 10px 20px;
             text-align: center;
         }
-        iframe {
-            width: 100%;
-            height: 80vh;
-            border: none;
+        main {
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -32,26 +37,39 @@
 </header>
 
 <main>
-    <iframe src="https://www.komoot.com/de-de/tour/343468116/embed?share_token=aJyEMOkRCNDRgYFGuy3G2aUxoAGUTQkc00xNLin3QxPa70ATfQ&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
     <div class="content" id="readme-content">
         <!-- Hier wird die README.md angezeigt -->
     </div>
 </main>
 
-    <script>
-    // Markdown-Datei von GitHub laden und in HTML umwandeln
-    fetch('https://raw.githubusercontent.com/Nacktiv/nacktiv.github.io/main/README.md')
-        .then(response => response.text())
-        .then(markdown => {
-            // Markdown in HTML umwandeln und in das div einfügen
-            document.getElementById('readme-content').innerHTML = marked(markdown);
+<script>
+    // GitHub API URL für die README.md
+    const repoOwner = 'Nacktiv';
+    const repoName = 'nacktiv.github.io';
+    const filePath = 'README.md';
+
+    // GitHub API URL, um die Datei im Base64-Format abzurufen
+    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+
+    // Abrufen des Inhalts der README.md von GitHub
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (data.content) {
+                // GitHub gibt den Inhalt im Base64-Format zurück, wir müssen ihn dekodieren
+                const decodedContent = atob(data.content);
+                // Markdown in HTML umwandeln
+                document.getElementById('readme-content').innerHTML = marked(decodedContent);
+            } else {
+                document.getElementById('readme-content').innerHTML = '<p>README-Datei nicht gefunden.</p>';
+            }
         })
         .catch(error => {
-            console.error('Fehler beim Laden der README.md:', error);
+            console.error('Fehler beim Abrufen der README.md:', error);
             document.getElementById('readme-content').innerHTML = '<p>Es gab einen Fehler beim Laden der Datei.</p>';
         });
 </script>
-    
+
 </body>
 </html>
 
