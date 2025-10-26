@@ -29,25 +29,31 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     /* CSS für das responsive Bild */
-    .responsive-image {
-      max-width: 100%;   /* Bild passt sich dem Container an */
-      height: auto;      /* Bildhöhe wird proportional angepasst */
-      border-radius: 8px; /* Abgerundete Ecken */
+ .responsive-image {
+      width: 100%;
+      height: auto;        /* Hält das Seitenverhältnis bei */
+      object-fit: cover;   /* Stellt sicher, dass das Bild das Container-Verhältnis ausfüllt, ohne das Seitenverhältnis zu verändern */
+      border-radius: 8px;  /* Abgerundete Ecken */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
-      display: block;    /* Blockanzeige für zentrierte Ausrichtung */
-      margin: 20px auto; /* Abstand und zentriert das Bild */
     }
 
-    /* Für die Container des Bildes */
-    .image-container {
+    /* Container für das zentrale Bild */
+    .central-image-container {
+      display: flex;
+      justify-content: center; /* Zentriert das Bild horizontal */
+      margin-bottom: 20px;     /* Abstand nach unten für die anderen Bilder */
+    }
+
+    /* Container für die zwei Bilder nebeneinander */
+    .image-row {
       display: flex; /* Flexbox für horizontale Anordnung */
-      justify-content: space-around; /* Abstände zwischen den Bildern */
-      flex-wrap: wrap; /* Bilder sollen in neue Zeilen umbrechen, wenn sie zu breit sind */
+      justify-content: space-between; /* Gleiche Abstände zwischen den Bildern */
+      gap: 20px; /* Abstand zwischen den Bildern */
+      margin-top: 20px; /* Etwas Abstand nach oben */
     }
 
-    .image-container img {
-      width: 30%;  /* Jedes Bild bekommt 30% der Gesamtbreite */
-      margin: 10px 0;  /* Etwas Abstand zwischen den Bildern */
+    .image-row img {
+      width: 48%;  /* Jedes Bild bekommt 48% der Breite, damit sie nebeneinander passen */
     }
   </style>
 </head>
@@ -59,9 +65,13 @@
 
      <p>Hier sind drei Bilder, die ich auf der Seite präsentieren möchte:</p>
 
-  <!-- Container für die Bilder -->
-  <div class="image-container">
-    <img src="images/Sometimeslessismore.png" alt="Bild 1" class="responsive-image">
+ <!-- Zentrales Bild -->
+  <div class="central-image-container">
+    <img src="images/sometimeslessismore.png" alt="Bild 1" class="responsive-image">
+  </div>
+
+  <!-- Zwei Bilder nebeneinander -->
+  <div class="image-row">
     <img src="images/nacktiv_my_vacation.jpg" alt="Bild 2" class="responsive-image">
     <img src="images/nacktiv_meine_nacktskitour.jpg" alt="Bild 3" class="responsive-image">
   </div>
