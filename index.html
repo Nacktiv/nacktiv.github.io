@@ -33,10 +33,25 @@
 
 <main>
     <iframe src="https://www.komoot.com/de-de/tour/343468116/embed?share_token=aJyEMOkRCNDRgYFGuy3G2aUxoAGUTQkc00xNLin3QxPa70ATfQ&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
-
-    <iframe src="https://raw.githubusercontent.com/Nacktiv/nacktiv.github.io/main/README.md" title="README.md anzeigen"></iframe>
+    <div class="content" id="readme-content">
+        <!-- Hier wird die README.md angezeigt -->
+    </div>
 </main>
 
+    <script>
+    // Markdown-Datei von GitHub laden und in HTML umwandeln
+    fetch('https://raw.githubusercontent.com/Nacktiv/nacktiv.github.io/main/README.md')
+        .then(response => response.text())
+        .then(markdown => {
+            // Markdown in HTML umwandeln und in das div einfügen
+            document.getElementById('readme-content').innerHTML = marked(markdown);
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden der README.md:', error);
+            document.getElementById('readme-content').innerHTML = '<p>Es gab einen Fehler beim Laden der Datei.</p>';
+        });
+</script>
+    
 </body>
 </html>
 
