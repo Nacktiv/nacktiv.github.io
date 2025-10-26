@@ -1,2 +1,4 @@
 # remote_theme: devich/quick@0.0.1
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-readme-index
