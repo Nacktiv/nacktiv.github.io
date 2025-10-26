@@ -5,31 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willkommen auf meiner Seite</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        iframe {
-            width: 100%;
-            height: 80vh;
-            border: none;
-        }
-    </style>
+     <style>
+    /* CSS für das responsive Bild */
+    .responsive-image {
+      max-width: 100%;   /* Bild passt sich dem Container an */
+      height: auto;      /* Bildhöhe wird proportional angepasst */
+      border-radius: 8px; /* Abgerundete Ecken */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
+      display: block;    /* Blockanzeige für zentrierte Ausrichtung */
+      margin: 20px auto; /* Abstand und zentriert das Bild */
+    }
+
+    /* Für die Container des Bildes */
+    .image-container {
+      display: flex; /* Flexbox für horizontale Anordnung */
+      justify-content: space-around; /* Abstände zwischen den Bildern */
+      flex-wrap: wrap; /* Bilder sollen in neue Zeilen umbrechen, wenn sie zu breit sind */
+    }
+
+    .image-container img {
+      width: 30%;  /* Jedes Bild bekommt 30% der Gesamtbreite */
+      margin: 10px 0;  /* Etwas Abstand zwischen den Bildern */
+    }
+  </style>
 </head>
 <body>
 
 <header>
     <h1>Willkommen auf Nacktivs GitHub-Seite</h1>
 </header>
+
+     <p>Hier sind drei Bilder, die ich auf der Seite präsentieren möchte:</p>
+
+  <!-- Container für die Bilder -->
+  <div class="image-container">
+    <img src="assets/images/bild1.jpg" alt="Bild 1" class="responsive-image">
+    <img src="assets/images/bild2.jpg" alt="Bild 2" class="responsive-image">
+    <img src="assets/images/bild3.jpg" alt="Bild 3" class="responsive-image">
+  </div>
 
 <main>
   <iframe src="https://www.komoot.com/de-de/tour/343468116/embed?share_token=aJyEMOkRCNDRgYFGuy3G2aUxoAGUTQkc00xNLin3QxPa70ATfQ&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
