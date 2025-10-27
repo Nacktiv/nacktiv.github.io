@@ -54,17 +54,25 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
 }
      
-    /* Container für die zwei Bilder nebeneinander */
-    .image-row {
-      display: flex; /* Flexbox für horizontale Anordnung */
-      justify-content: space-between; /* Gleiche Abstände zwischen den Bildern */
-      gap: 5px; /* Abstand zwischen den Bildern */
-      margin-top: 20px; /* Etwas Abstand nach oben */
-    }
+/* Container für die zwei Bilder nebeneinander */
+.image-row {
+  display: flex; /* Flexbox für horizontale Anordnung */
+  justify-content: space-between; /* Gleiche Abstände zwischen den Bildern */
+  gap: 5px; /* Abstand zwischen den Bildern */
+  margin-top: 20px; /* Etwas Abstand nach oben */
+  background-color: #55CDFC; /* Transsexuellen-Blau als Hintergrundfarbe */
+  padding: 10px; /* Padding sorgt dafür, dass der Hintergrund nicht direkt an den Bildern ist */
+  border-radius: 10px; /* Abgerundete Ecken für den Container */
+}
 
-    .image-row img {
-      width: 49%;  /* Jedes Bild bekommt 48% der Breite, damit sie nebeneinander passen */
-    }
+/* Die Bilder innerhalb des Containers */
+.image-row img {
+  width: 49%;  /* Jedes Bild bekommt 49% der Breite, damit sie nebeneinander passen */
+  height: auto; /* Beibehaltung des Seitenverhältnisses */
+  border-radius: 8px; /* Abgerundete Ecken für die Bilder */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für Tiefe */
+}
+
   </style>
 </head>
 <body>
