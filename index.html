@@ -107,49 +107,93 @@
 
   <iframe src="https://www.komoot.com/de-de/tour/381046301/embed?share_token=aPWHEgZ9NkvqtCwhkALRjJA5rg5SmnHAI19t322N0emHPAqku3&profile=1" width="80%" height="700" frameborder="0" scrolling="no" style="display: block; margin: 0 auto; border: 30px solid #F7A8B8;"></iframe>
 </main> 
-</body>
+/* Allgemeiner Footer-Stil */
+#footer {
+  background-color: #007bff; /* Blaue Hintergrundfarbe */
+  color: #fff; /* Weißer Text */
+  padding: 40px 20px;
+  text-align: center;
+}
 
-<footer>
-  <div class="transgender-footer">
-    <!-- Transgender Flagge als Hintergrundbild -->
-    <div class="transgender-flag">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Transgender_Pride_Flag.svg" alt="Transgender Flag" />
-    </div>
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    <!-- Transgender-Symbole und Icons -->
-    <div class="transgender-icons">
-      <div class="icon">
-        <a href="https://en.wikipedia.org/wiki/Transgender_symbol" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Transgender_symbol.svg" alt="Transgender Symbol" />
-        </a>
-      </div>
-      <div class="icon">
-        <a href="https://en.wikipedia.org/wiki/Rainbow_flag" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Pride_Rainbow_Flag.svg" alt="Rainbow Flag" />
-        </a>
-      </div>
-      <div class="icon">
-        <a href="https://en.wikipedia.org/wiki/Pride_flag#LGBTQ%2B_community" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/LGBT_pride_flag_%28a_tribute_to_the_2016_Pulse_shooting_victims%29.svg" alt="LGBTQ+ Pride Flag" />
-        </a>
-      </div>
-    </div>
+.footer-links a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
-    <!-- Empowerment-Zitat -->
-    <div class="transgender-quote">
-      <p>"Es gibt nichts Mutigeres als die Authentizität zu leben." — **Laverne Cox**</p>
-    </div>
+.footer-links a:hover {
+  color: #F7A8B8; /* Transsexuellen-Rosa beim Hover */
+  transform: scale(1.1); /* Bild wird leicht vergrößert beim Hover */
+}
 
-    <!-- Call-to-Action-Button -->
-    <div class="cta-button">
-      <a href="https://www.transgender-equality.org/" target="_blank">Unterstütze Trans-Rechte</a>
-    </div>
-  </div>
-</footer>
+/* Transgender-Symbole im Footer */
+.transgender-icons img {
+  width: 50px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
 
+.transgender-icons img:hover {
+  transform: scale(1.2); /* Vergrößert das Symbol beim Hover */
+}
+
+/* Copyright */
+.footer-copyright p {
+  font-size: 0.9em;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Schwebende Symbole im Footer */
+.transgender-icons img {
+  width: 50px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.transgender-icons img:hover {
+  transform: translateY(-5px) scale(1.2); /* Symbol schwebt und vergrößert sich */
+}
 
 
     
+    
+
+  <!-- Footer einfügen -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="transgender-icons">
+        <a href="https://www.transgender.org" target="_blank" title="Transgender Resources">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Transgender_Pride_Flag.svg/2560px-Transgender_Pride_Flag.svg.png" alt="Transgender Pride Flag">
+        </a>
+        <a href="https://www.transgender.org" target="_blank" title="Transgender Resources">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Transgender_Symbol.svg" alt="Transgender Symbol">
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">Über uns</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#privacy">Datenschutz</a>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2025 Transgender Support. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+    
+</body>
+
 </html>
 
 
