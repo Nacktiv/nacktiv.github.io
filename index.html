@@ -49,6 +49,24 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+/* Allgemeiner Stil für alle iframes */
+iframe {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Rosa für ungerade iframes (1, 3, 5, ...) */
+iframe:nth-of-type(odd) {
+    border: 30px solid #F7A8B8;  /* Transsexuellen-Rosa */
+}
+
+/* Blau für gerade iframes (2, 4, 6, ...) */
+iframe:nth-of-type(even) {
+    border: 30px solid #55CDFC;  /* Transsexuellen-Blau */
+}
+     
     /* CSS für das responsive Bild */
     .responsive-image {
       width: 100%;
@@ -246,8 +264,7 @@ footer {
           width="100%" 
           height="700" 
           frameborder="0" 
-          scrolling="no" 
-          style="display: block; margin: 0 auto; border: 30px solid #F7A8B8; box-sizing: border-box;">
+          scrolling="no">
   </iframe>
 
 
