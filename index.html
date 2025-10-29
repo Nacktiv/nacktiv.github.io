@@ -181,7 +181,7 @@ footer {
   transform: translateY(-2px); /* Links bewegen sich leicht nach oben */
 }
 
- /* ====== Social-Media-Icons ====== */
+/* ====== Social-Media-Icons ====== */
 .footer-social {
   margin: 15px 0;
 }
@@ -191,6 +191,7 @@ footer {
   margin: 0 10px;
   font-size: 1.4em;
   transition: color 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease;
+  position: relative;  /* Notwendig für die Z-Index-Änderung */
 }
 
 /* Verstärkter Hover-Effekt */
@@ -206,12 +207,15 @@ footer {
   border-radius: 50%;
   background-color: #555;  /* Dunklerer Hintergrund für die Icons */
   transition: background-color 0.3s ease;
+  z-index: 1;  /* Sicherstellen, dass das Icon immer oben bleibt */
 }
 
 /* Hintergrundfarbe bei Hover */
 .footer-social a:hover i {
   background-color: #F7A8B8; /* Transsexuellen-Rosa beim Hover */
+  z-index: 2; /* Stellt sicher, dass das Icon bei Hover über dem Hintergrund bleibt */
 }
+
     
 
 .footer-symbols {
