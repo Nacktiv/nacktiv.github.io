@@ -190,15 +190,16 @@ footer {
   color: #fff;
   margin: 0 10px;
   font-size: 1.4em;
-  transition: color 0.3s ease, transform 0.3s ease;
-  display: inline-block; /* Wichtig, damit der Hover-Effekt richtig funktioniert */
+  transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease; /* Filter hinzufügen für sanfte Effekte */
+  display: inline-block;
 }
 
-/* Verstärkter Hover-Effekt */
 .footer-social a:hover {
-  color: #F7A8B8;  /* Transsexuellen-Rosa */
-  transform: scale(1.3) rotate(10deg); /* Vergrößerung und leichte Rotation */
+  color: #F7A8B8;
+  transform: scale(1.3) rotate(10deg);
+  filter: brightness(1.2); /* Helles Aufleuchten beim Hover */
 }
+
 
 
 
