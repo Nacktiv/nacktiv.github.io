@@ -220,23 +220,30 @@ footer {
   margin: 0;
 }
 
-/* ====== Responsive Design ====== */
+  /* ====== Responsive Design für Social Media Icons ====== */
 @media (max-width: 600px) {
-  .transgender-icons img {
-    width: 45px;
-    margin: 8px;
+  .footer-social {
+    flex-direction: column;  /* Icons untereinander auf mobilen Geräten */
+    gap: 15px;  /* Abstand zwischen den Icons */
+    align-items: center; /* Icons zentrieren */
   }
 
+  .footer-social a {
+    font-size: 1.5em;  /* Etwas größere Icons auf mobilen Geräten */
+  }
+
+  /* Optional: Abstände der Links im Footer anpassen */
   .footer-links a {
     display: block;
     margin: 10px 0;
   }
 
-  .footer-social a {
-    font-size: 1.2em;
+  /* Anpassung der Transgender-Symbole */
+  .transgender-icons img {
+    width: 45px; /* Etwas kleinere Symbole auf mobilen Geräten */
+    margin: 8px;
   }
-}
-
+}   
 
   </style>
 </head>
