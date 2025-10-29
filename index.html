@@ -190,8 +190,7 @@ footer {
   color: #fff;
   margin: 0 10px;
   font-size: 1.4em;
-  transition: color 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease;
-  position: relative; /* für z-index erforderlich */
+  transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block; /* Wichtig, damit der Hover-Effekt richtig funktioniert */
 }
 
@@ -199,40 +198,8 @@ footer {
 .footer-social a:hover {
   color: #F7A8B8;  /* Transsexuellen-Rosa */
   transform: scale(1.3) rotate(10deg); /* Vergrößerung und leichte Rotation */
-  box-shadow: 0 0 15px rgba(247, 168, 184, 0.7); /* Weicher rosa Schatten */
-  position: relative;
-  z-index: 1; /* Link bleibt im Vordergrund */
 }
 
-/* Hintergrund des Icons, rund und angepasst */
-.footer-social a i {
-  padding: 10px;
-  border-radius: 50%; /* Runde Form für die Icons */
-  background-color: #555;  /* Dunklerer Hintergrund für die Icons */
-  transition: background-color 0.3s ease;
-  position: relative;
-  z-index: 2; /* Das Icon bleibt immer im Vordergrund */
-}
-
-/* Hintergrundfarbe und Hover-Effekt */
-.footer-social a:hover i {
-  background-color: #F7A8B8; /* Transsexuellen-Rosa beim Hover */
-  z-index: 3; /* Das Icon bleibt über dem Hover-Hintergrund sichtbar */
-}
-
-/* Hintergrundscheibe (rosa Scheibe) beim Hover */
-.footer-social a:hover::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #F7A8B8; /* Rosa Overlay */
-  border-radius: 50%; /* Runde Form */
-  z-index: 0; /* Rosa Overlay bleibt im Hintergrund */
-  opacity: 0.5; /* Leichte Transparenz für das Overlay */
-}
 
 
     
