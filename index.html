@@ -191,32 +191,32 @@ footer {
   margin: 0 10px;
   font-size: 1.4em;
   transition: color 0.4s ease, transform 0.4s ease, box-shadow 0.3s ease;
-  position: relative; /* Notwendig für z-index */
+  position: relative; /* für z-index erforderlich */
+  display: inline-block; /* Wichtig, damit der Hover-Effekt richtig funktioniert */
 }
 
 /* Verstärkter Hover-Effekt */
 .footer-social a:hover {
-  color: #F7A8B8;  /* Intensiveres Transsexuellen-Rosa */
-  transform: scale(1.3) rotate(10deg); /* Stärkere Vergrößerung und leichte Rotation */
+  color: #F7A8B8;  /* Transsexuellen-Rosa */
+  transform: scale(1.3) rotate(10deg); /* Vergrößerung und leichte Rotation */
   box-shadow: 0 0 15px rgba(247, 168, 184, 0.7); /* Weicher rosa Schatten */
 }
 
-/* Icons Hintergrund und runde Form */
+/* Hintergrund des Icons, rund und angepasst */
 .footer-social a i {
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 50%; /* Runde Form für die Icons */
   background-color: #555;  /* Dunklerer Hintergrund für die Icons */
   transition: background-color 0.3s ease;
   position: relative;
-  z-index: 1; /* Sicherstellen, dass das Icon immer oben bleibt */
+  z-index: 1; /* Das Icon bleibt über dem Hintergrund sichtbar */
 }
 
-/* Hintergrundfarbe bei Hover */
+/* Hintergrundfarbe und Hover-Effekt */
 .footer-social a:hover i {
   background-color: #F7A8B8; /* Transsexuellen-Rosa beim Hover */
-  z-index: 2; /* Sicherstellen, dass das Icon beim Hover oben bleibt und nicht vom Hintergrund überdeckt wird */
+  z-index: 2; /* Icon bleibt über dem Hover-Hintergrund sichtbar */
 }
-
 
     
 
