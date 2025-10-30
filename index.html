@@ -170,24 +170,23 @@ footer {
 .symbol-hover-image {
   width: 200px; /* Gleiche Größe wie das Hauptbild */
   height: auto;
-  position: absolute; /* Positionieren der Bilder innerhalb des Containers */
+  position: absolute;
   top: 0;
   left: 0;
-  visibility: hidden; /* Flagge und Symbol anfangs unsichtbar */
-  opacity: 0; /* Flagge und Symbol anfangs durchsichtig */
-  transition: opacity 0.3s ease-in-out; /* Übergangseffekt */
+  z-index: 0; /* Stellt sicher, dass die Bilder im nicht-hover-Zustand im Hintergrund bleiben */
+  opacity: 0; /* Anfangs unsichtbar */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Weicher Übergang */
 }
+
 
 /* Hover-Effekte: Beim Hover sichtbar machen */
-.transgender-icons:hover .flag-hover-image {
-  visibility: visible; /* Flagge sichtbar beim Hover */
-  opacity: 1; /* Flagge vollständig sichtbar */
+.transgender-icons:hover .flag-hover-image,
+.transgender-icons:hover .symbol-hover-image {
+  transform: scale(1) translateY(0); /* Vergrößert das Bild leicht */
+  z-index: 1;  /* Setzt das Bild über das Hauptbild */
+  opacity: 1;  /* Macht das Bild vollständig sichtbar */
 }
 
-.transgender-icons:hover .symbol-hover-image {
-  visibility: visible; /* Symbol sichtbar beim Hover */
-  opacity: 1; /* Symbol vollständig sichtbar */
-}
 
 
 /* ====== Footer-Links ====== */
