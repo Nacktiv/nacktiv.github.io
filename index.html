@@ -149,6 +149,7 @@ footer {
 /* ====== Icons (Transgender-Symbole) ====== */
 .transgender-icons {
   margin-bottom: 20px;
+  position: relative; /* Erforderlich für das Positionieren der Bilder */
 }
 
 .transgender-icons img {
@@ -158,10 +159,46 @@ footer {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
 }
 
+/* Hover-Effekt für die Bilder */
 .transgender-icons img:hover {
   transform: translateY(-6px) scale(1.15);
   filter: drop-shadow(0 0 10px #F7A8B8); /* Transsexuellen-Rosa beim Hover */
 }
+
+/* Bilder für die Flagge und das Symbol, die beim Hover angezeigt werden */
+.flag-hover-image {
+  width: 60px; /* Gleiche Größe wie das Hauptbild */
+  height: auto;
+  position: absolute; /* Positionieren der Bilder innerhalb des Containers */
+  top: 0;
+  left: 0;
+  visibility: hidden; /* Flagge anfangs unsichtbar */
+  opacity: 0; /* Flagge anfangs durchsichtig */
+  transition: opacity 0.3s ease-in-out; /* Übergangseffekt */
+}
+
+.symbol-hover-image {
+  width: 60px; /* Gleiche Größe wie das Hauptbild */
+  height: auto;
+  position: absolute; /* Positionieren der Bilder innerhalb des Containers */
+  top: 0;
+  left: 0;
+  visibility: hidden; /* Symbol anfangs unsichtbar */
+  opacity: 0; /* Symbol anfangs durchsichtig */
+  transition: opacity 0.3s ease-in-out; /* Übergangseffekt */
+}
+
+/* Hover-Effekte: Beim Hover sichtbar machen */
+.transgender-icons:hover .flag-hover-image {
+  visibility: visible; /* Flagge sichtbar machen beim Hover */
+  opacity: 1; /* Flagge vollständig sichtbar */
+}
+
+.transgender-icons:hover .symbol-hover-image {
+  visibility: visible; /* Symbol sichtbar machen beim Hover */
+  opacity: 1; /* Symbol vollständig sichtbar */
+}
+
 
 /* ====== Footer-Links ====== */
 .footer-links {
@@ -292,16 +329,35 @@ footer {
 <footer id="footer">
   <div class="footer-content">
 
-      <div class="transgender-icons">
-  <a href="https://de.cam4.eu/nacktiv/" target="_blank" title="Transsexual Nacktiv bei CAM4">
-    <!-- Transgender Pride Flag -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Transgender_Pride_flag.svg/330px-Transgender_Pride_flag.svg.png" alt="Transsexual Pride Flag symbolizing visibility, rights, and acceptance of transsexual individuals" style="width: 200px; height: auto; vertical-align: middle; margin-right: 100px;">
-
-    <!-- Transgender Symbol -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Transgender_symbol_pink_and_blue.svg/240px-Transgender_symbol_pink_and_blue.svg.png" alt="Transsexual symbol representing sexual identity, transition, and inclusivity" style="width: 200px; height: auto; vertical-align: middle;">
-  </a>
-          
-</div>
+ <div class="transgender-icons">
+      <a href="https://de.cam4.eu/nacktiv/" target="_blank" title="Transsexual Nacktiv bei CAM4">
+        
+        <!-- Transgender Pride Flag -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Transgender_Pride_flag.svg/330px-Transgender_Pride_flag.svg.png" 
+             alt="Transsexual Pride Flag symbolizing visibility, rights, and acceptance of transsexual individuals" 
+             class="main-image" 
+             style="width: 200px; height: auto; vertical-align: middle; margin-right: 100px;">
+        
+        <!-- Transgender Symbol -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Transgender_symbol_pink_and_blue.svg/240px-Transgender_symbol_pink_and_blue.svg.png" 
+             alt="Transsexual symbol representing sexual identity, transition, and inclusivity" 
+             class="main-image" 
+             style="width: 200px; height: auto; vertical-align: middle;">
+        
+        <!-- Bild für die Flagge, das beim Hover angezeigt wird -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Transgender_Rainbow_Flag_Progress_Pride_Flag.svg/120px-Transgender_Rainbow_Flag_Progress_Pride_Flag.svg.png" 
+             alt="Progress Pride Flag" 
+             class="flag-hover-image" 
+             style="width: 200px; height: auto; position: absolute; top: 0; left: 0; visibility: hidden; opacity: 0; transition: opacity 0.3s ease-in-out;">
+        
+        <!-- Bild für das Symbol, das beim Hover angezeigt wird -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Transgender_Symbol_Grey.svg/400px-Transgender_Symbol_Grey.svg.png" 
+             alt="Transgender Symbol in Grau" 
+             class="symbol-hover-image" 
+             style="width: 200px; height: auto; position: absolute; top: 0; left: 0; visibility: hidden; opacity: 0; transition: opacity 0.3s ease-in-out;">
+        
+      </a>
+    </div>
 
 
 <p class="footer-message">
