@@ -190,15 +190,16 @@ footer {
 
 /* Hover-Effekte: Beim Hover sichtbar machen */
 .transgender-icons:hover .flag-hover-image {
-  visibility: visible; /* Flagge sichtbar machen beim Hover */
+  visibility: visible; /* Flagge sichtbar beim Hover */
   opacity: 1; /* Flagge vollständig sichtbar */
+  transition: opacity 0.3s ease-in-out, visibility 0s ease-in 0s; /* Sofortige Sichtbarkeit */
 }
 
 .transgender-icons:hover .symbol-hover-image {
-  visibility: visible; /* Symbol sichtbar machen beim Hover */
+  visibility: visible; /* Symbol sichtbar beim Hover */
   opacity: 1; /* Symbol vollständig sichtbar */
+  transition: opacity 0.3s ease-in-out, visibility 0s ease-in 0s; /* Sofortige Sichtbarkeit */
 }
-
 
 /* ====== Footer-Links ====== */
 .footer-links {
