@@ -153,7 +153,7 @@ footer {
 }
 
 .transgender-icons img {
-  width: 60px;
+  width: 200px; /* Breite der Hauptbilder */
   margin: 0 10px;
   transition: transform 0.4s ease, filter 0.3s ease;
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
@@ -166,25 +166,15 @@ footer {
 }
 
 /* Bilder für die Flagge und das Symbol, die beim Hover angezeigt werden */
-.flag-hover-image {
-  width: 60px; /* Gleiche Größe wie das Hauptbild */
-  height: auto;
-  position: absolute; /* Positionieren der Bilder innerhalb des Containers */
-  top: 0;
-  left: 0;
-  visibility: hidden; /* Flagge anfangs unsichtbar */
-  opacity: 0; /* Flagge anfangs durchsichtig */
-  transition: opacity 0.3s ease-in-out; /* Übergangseffekt */
-}
-
+.flag-hover-image,
 .symbol-hover-image {
-  width: 60px; /* Gleiche Größe wie das Hauptbild */
+  width: 200px; /* Gleiche Größe wie das Hauptbild */
   height: auto;
   position: absolute; /* Positionieren der Bilder innerhalb des Containers */
   top: 0;
   left: 0;
-  visibility: hidden; /* Symbol anfangs unsichtbar */
-  opacity: 0; /* Symbol anfangs durchsichtig */
+  visibility: hidden; /* Flagge und Symbol anfangs unsichtbar */
+  opacity: 0; /* Flagge und Symbol anfangs durchsichtig */
   transition: opacity 0.3s ease-in-out; /* Übergangseffekt */
 }
 
@@ -192,14 +182,13 @@ footer {
 .transgender-icons:hover .flag-hover-image {
   visibility: visible; /* Flagge sichtbar beim Hover */
   opacity: 1; /* Flagge vollständig sichtbar */
-  transition: opacity 0.3s ease-in-out, visibility 0s ease-in 0s; /* Sofortige Sichtbarkeit */
 }
 
 .transgender-icons:hover .symbol-hover-image {
   visibility: visible; /* Symbol sichtbar beim Hover */
   opacity: 1; /* Symbol vollständig sichtbar */
-  transition: opacity 0.3s ease-in-out, visibility 0s ease-in 0s; /* Sofortige Sichtbarkeit */
 }
+
 
 /* ====== Footer-Links ====== */
 .footer-links {
