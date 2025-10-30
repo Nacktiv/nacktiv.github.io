@@ -155,36 +155,14 @@ footer {
 .transgender-icons img {
   width: 200px; /* Breite der Hauptbilder */
   margin: 0 10px;
-  transition: transform 0.4s ease, filter 0.3s ease;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  transition: transform 0.4s ease, filter 0.3s ease; /* Animation beim Hover */
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)); /* Leichter Schatten */
 }
 
 /* Hover-Effekt für die Bilder */
 .transgender-icons img:hover {
-  transform: translateY(-6px) scale(1.15);
+  transform: translateY(-6px) scale(1.15); /* Bild vergrößern und nach oben verschieben */
   filter: drop-shadow(0 0 10px #F7A8B8); /* Transsexuellen-Rosa beim Hover */
-}
-
-/* Bilder für die Flagge und das Symbol, die beim Hover angezeigt werden */
-.flag-hover-image,
-.symbol-hover-image {
-  width: 200px; /* Gleiche Größe wie das Hauptbild */
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0; /* Stellt sicher, dass die Bilder im nicht-hover-Zustand im Hintergrund bleiben */
-  opacity: 0; /* Anfangs unsichtbar */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Weicher Übergang */
-}
-
-
-/* Hover-Effekte: Beim Hover sichtbar machen */
-.transgender-icons:hover .flag-hover-image,
-.transgender-icons:hover .symbol-hover-image {
-  transform: scale(1) translateY(0); /* Vergrößert das Bild leicht */
-  z-index: 1;  /* Setzt das Bild über das Hauptbild */
-  opacity: 1;  /* Macht das Bild vollständig sichtbar */
 }
 
 
