@@ -13,14 +13,23 @@
     <loc>https://nacktiv.github.io/videos</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+      <video:video>
+      <video:title>Beispiel Video</video:title>
+      <video:description>Transsexual Nude Art Video</video:description>
+      <video:content_loc>https://nacktiv.github.io/videos/beispielvideo.mp4</video:content_loc>
+    </video:video> 
   </url>
 
   <url>
     <loc>https://nacktiv.github.io/images</loc>
     <lastmod>2025-10-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
+       <image:image>
+      <image:loc>https://nacktiv.github.io/images/nacktiv_meine_nacktskitour.jpg</image:loc>
+      <image:caption>Nude Ski Mountaineering</image:caption>
+    </image:image>
   </url>
 
 </urlset>
