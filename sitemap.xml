@@ -4,6 +4,7 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
+  <!-- Startseite -->
   <url>
     <loc>https://nacktiv.github.io/</loc>
     <lastmod>2025-11-01</lastmod>
@@ -11,18 +12,23 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Video-Seite -->
   <url>
     <loc>https://nacktiv.github.io/videos</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
     <video:video>
-      <video:title>[translate:Beispiel Video]</video:title>
-      <video:description>Transsexual Nude Art Video</video:description>
+      <video:thumbnail_loc>https://nacktiv.github.io/videos/beispielvideo_thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Transsexuelles Nackt-Kunstvideo (Transsexual Nude Art Video)</video:title>
+      <video:description>
+        Ausdrucksstarkes transsexuelles Nackt-Kunstvideo über natürliche Körperlichkeit, Bewegung und Sportfreiheit (expressive transsexual nude art video about natural body and freedom in sports).
+      </video:description>
       <video:content_loc>https://nacktiv.github.io/videos/beispielvideo.mp4</video:content_loc>
     </video:video>
   </url>
 
+  <!-- Bildgalerie -->
   <url>
     <loc>https://nacktiv.github.io/images</loc>
     <lastmod>2025-10-20</lastmod>
@@ -31,40 +37,41 @@
 
     <image:image>
       <image:loc>https://nacktiv.github.io/images/nacktiv_meine_nacktskitour.jpg</image:loc>
-      <image:caption>Nude Ski Mountaineering</image:caption>
+      <image:caption>Nacktskitour im Hochgebirge – natürlicher Wintersport nackt (Nude ski mountaineering – natural winter sports naked)</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nacktiv.github.io/images/nacktiv_my_vacation.jpg</image:loc>
-      <image:caption>[translate:Nacktwandern im Sommerurlaub]</image:caption>
+      <image:caption>Nacktwandern im Sommerurlaub – natürliche Freiheit beim Sport (Nude hiking on summer vacation – natural freedom in sports)</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nacktiv.github.io/images/dfk1.jpg</image:loc>
-      <image:caption>[translate:Nacktskitour am Ochsenälpeleskopf]</image:caption>
+      <image:caption>Nacktskitour am Ochsenälpeleskopf – sportlich, frei und nackt (Nude ski tour on the Ochsenälpeleskopf – free and naked sports)</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nacktiv.github.io/images/dfk2.jpg</image:loc>
-      <image:caption>[translate:Nacktskitour an der Hirschwängalm mit Geierköpfen im Hintergrund]</image:caption>
+      <image:caption>Nacktskitour an der Hirschwängalm mit Geierköpfen im Hintergrund – Sport und Natur nackt erleben (Nude ski tour at Hirschwängalm with Geierköpfe in the background – experience nature and sports naked)</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nacktiv.github.io/images/dfk4.jpg</image:loc>
-      <image:caption>[translate:Winterliche Nacktskitour Anstieg]</image:caption>
+      <image:caption>Winterliche Nacktskitour – Aufstieg im Schnee ohne Kleidung (Winter nude ski ascent – naked in the snow)</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nacktiv.github.io/images/dfk5.jpg</image:loc>
-      <image:caption>[translate:Nacktskitour mit Blick auf die Tannheimer Berge]</image:caption>
+      <image:caption>Nacktsport mit Aussicht – Nacktskitour mit Blick auf die Tannheimer Berge (Nude sports with a view – ski tour of the Tannheim mountains)</image:caption>
     </image:image>
 
     <image:image>
       <image:loc>https://nacktiv.github.io/images/dfk9.jpg</image:loc>
-      <image:caption>[translate:Nacktskitour Pause am Teufelstättkopf]</image:caption>
+      <image:caption>Pause bei der Nacktskitour am Teufelstättkopf – entspannter Nacktsport in der Natur (Rest stop on the Teufelstättkopf nude ski tour – relaxed naked sports in nature)</image:caption>
     </image:image>
 
   </url>
 
 </urlset>
+
 
