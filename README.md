@@ -15,8 +15,9 @@ Bilder für die Zeitschrift *FKK Reisen* des **Deutschen Verbands für Freikörp
 ![Nacktskitour am Galtjoch](images/dfk5.jpg "Nacktskitour am Galtjoch")  
 ![Nacktskitour am Teufelstättkopf](images/dfk9.jpg "Nacktskitour am Teufelstättkopf")
 
-### 🎥 Nacktskitour am Hengst
-🎥 [Video ansehen](https://nacktiv.github.io/videos/video.html)
+### 🎥 Nacktskitour am Hengstwald
+🎥 [Video ansehen]({{ '/videos/video.html' | relative_url }})
+
 
 
 
