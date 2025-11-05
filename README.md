@@ -9,3 +9,5 @@ Folgende Bilder wurden dem Deutschen Verband für Freikörperkultur für die Zei
 ![Alt-Text](images/dfk4.jpg "Nacktskitour am Galtjoch")
 ![Alt-Text](images/dfk5.jpg "Nacktskitour am Galtjoch")
 ![Alt-Text](images/dfk9.jpg "Nacktskitour am Teufelstättkopf")
+
+https://nacktiv.github.io/videos/NacktskitourHengst2-00.00.40.656-00.01.01.733.webm
