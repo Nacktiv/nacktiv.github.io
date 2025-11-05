@@ -16,13 +16,8 @@ Bilder für die Zeitschrift *FKK Reisen* des **Deutschen Verbands für Freikörp
 ![Nacktskitour am Teufelstättkopf](images/dfk9.jpg "Nacktskitour am Teufelstättkopf")
 
 ### 🎥 Nacktskitour am Hengst
+🎥 [Video ansehen](./videos/video.html)
 
-<div style="text-align:center;">
-  <video controls width="640" style="max-width:100%; border-radius:8px;">
-    <source src="https://nacktiv.github.io/videos/NacktskitourHengst2-00.00.40.656-00.01.01.733.webm" type="video/webm">
-    Dein Browser unterstützt das Video-Tag nicht.
-  </video>
-</div>
 
 
 
