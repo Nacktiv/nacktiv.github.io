@@ -17,8 +17,11 @@ Bilder für die Zeitschrift *FKK Reisen* des **Deutschen Verbands für Freikörp
 
 ### 🎥 Nacktskitour am Hengst
 
-<video autoplay loop muted playsinline width="640">
+{% raw %}
+<video controls autoplay loop muted playsinline width="640" style="border-radius: 8px; display:block; margin: 1em auto;">
   <source src="https://nacktiv.github.io/videos/NacktskitourHengst2-00.00.40.656-00.01.01.733.webm" type="video/webm">
   Dein Browser unterstützt das Video-Tag nicht.
 </video>
+{% endraw %}
+
 
