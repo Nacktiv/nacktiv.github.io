@@ -1,4 +1,4 @@
-# Nacktiv – Gemeinsam aktiv nackt unterwegs
+# Nacktiv – Aktiv nackt unterwegs
 
 **Nacktwandern, Nacktskitouren, Trailrunning, Mapping für OpenStreetMap, Dokumentation, Trailfotos und -videos**
 
@@ -7,8 +7,7 @@ Ob beim Wandern, auf Skitour, beim Trailrunning oder beim Openstreemap Mapping �
 
 ### Beiträge für den Deutschen Verband für Freikörperkultur (DFK)
 
-Bilder für die Zeitschrift *FKK Reisen* des **Deutschen Verband für Freikörperkultur (DFK)**  
-zum Thema **Nacktskitouren** 
+Bilder für die Zeitschrift *FKK Reisen* des **Deutschen Verbands für Freikörperkultur (DFK)** zum Thema **Nacktskitouren** 
 
 ![Nacktskitour am Ochsenälpelelskopf](images/dfk1.jpg "Nacktskitour am Ochsenälpelelskopf")  
 ![Nacktskitour am Ochsenälpelelskopf](images/dfk2.jpg "Nacktskitour am Ochsenälpelelskopf")  
