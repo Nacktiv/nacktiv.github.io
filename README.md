@@ -1,13 +1,24 @@
-# nacktiv.github.io
-Nacktiv Homepage
+# Nacktiv – Gemeinsam aktiv nackt unterwegs
 
-Nacktwandern, Nacktskitouren, Trailrunning, Mappen für Openstreetmap, Dokumentation, Trailfotos, Trailvideos
+**Nacktwandern, Nacktskitouren, Trailrunning, Mapping für OpenStreetMap, Dokumentation, Trailfotos und -videos**
 
-Folgende Bilder wurden dem Deutschen Verband für Freikörperkultur für die Zeitschrift FKK Reisen zum Thema Nacktskitour zur Verfügung gestellt
-![Alt-Text](images/dfk1.jpg "Nacktskitour am Ochsenälpelelskopf")
-![Alt-Text](images/dfk2.jpg "Nacktskitour am Ochsenälpelelskopf")
-![Alt-Text](images/dfk4.jpg "Nacktskitour am Galtjoch")
-![Alt-Text](images/dfk5.jpg "Nacktskitour am Galtjoch")
-![Alt-Text](images/dfk9.jpg "Nacktskitour am Teufelstättkopf")
+Bewegung in der Natur kann auch ohne Kleidung ganz natürlich sein.  
+Ob beim Wandern, auf Skitour, beim Trailrunning oder beim Openstreemap Mapping – Nacktiv steht für Freiheit, Natürlichkeit und Freude an der Bewegung.
 
-https://nacktiv.github.io/videos/NacktskitourHengst2-00.00.40.656-00.01.01.733.webm
+### Beiträge für den Deutschen Verband für Freikörperkultur (DFK)
+
+Bilder für die Zeitschrift *FKK Reisen* des **Deutschen Verband für Freikörperkultur (DFK)**  
+zum Thema **Nacktskitouren** 
+
+![Nacktskitour am Ochsenälpelelskopf](images/dfk1.jpg "Nacktskitour am Ochsenälpelelskopf")  
+![Nacktskitour am Ochsenälpelelskopf](images/dfk2.jpg "Nacktskitour am Ochsenälpelelskopf")  
+![Nacktskitour am Galtjoch](images/dfk4.jpg "Nacktskitour am Galtjoch")  
+![Nacktskitour am Galtjoch](images/dfk5.jpg "Nacktskitour am Galtjoch")  
+![Nacktskitour am Teufelstättkopf](images/dfk9.jpg "Nacktskitour am Teufelstättkopf")
+
+### 🎥 Nacktskitour am Hengst
+
+<video controls width="640">
+  <source src="https://nacktiv.github.io/videos/NacktskitourHengst2-00.00.40.656-00.01.01.733.webm" type="video/webm">
+  Dein Browser unterstützt das Video-Tag nicht.
+</video>
