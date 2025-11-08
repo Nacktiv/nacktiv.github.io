@@ -368,6 +368,41 @@ footer {
 }
 
 
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  max-width: 250px;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px; /* Deutlich größere Schrift */
+  font-weight: bold;
+  line-height: 1.3;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* Position über dem Icon */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  white-space: normal; /* mehrzeiliger Text erlaubt */
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
 
 
 
@@ -480,12 +515,15 @@ footer {
 <!-- Grindr Icon mit Text "Kontakt auf Nacktiv" -->
 <div class="grindr-icon-container" style="text-align: center; margin-top: 30px;">
 <p style="color: #fff;">Kontakt auf</p>
-    <a href="https://www.grindr.com/" target="_blank" title="Grindr - direKter Kontakt mit NaCktiv auf der ParTy">
+    <div class="tooltip-container">
+  <a href="https://www.grindr.com/" target="_blank" class="grindr-link">
     <img src="https://img.icons8.com/?size=100&id=u9D8oYSNUBIO&format=png&color=dddddd" 
          alt="Grindr Logo" 
-         class="grindr-icon" 
-         style="width: 80px; height: auto; margin-bottom: 5px;">
+         class="grindr-icon">
   </a>
+  <span class="tooltip-text">[translate:Grindr - direKter Kontakt mit NaCktiv auf der ParTy]</span>
+</div>
+
   <p style="font-size: 16px; font-weight: bold; color: #fff; margin-top: 5px;">Nacktiv</p>
 </div>
 
