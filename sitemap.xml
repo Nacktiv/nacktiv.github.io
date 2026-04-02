@@ -13,20 +13,24 @@
   </url>
 
   <!-- Video-Seite -->
-  <url>
-    <loc>https://nacktiv.github.io/videos</loc>
-    <lastmod>2025-10-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <video:video>
-      <video:thumbnail_loc>https://nacktiv.github.io/videos/beispielvideo_thumbnail.jpg</video:thumbnail_loc>
-      <video:title>Transsexuelles Nackt-Kunstvideo (Transsexual Nude Art Video)</video:title>
-      <video:description>
-        Ausdrucksstarkes transsexuelles Nackt-Kunstvideo über natürliche Körperlichkeit, Bewegung und Sportfreiheit (expressive transsexual nude art video about natural body and freedom in sports).
-      </video:description>
-      <video:content_loc>https://nacktiv.github.io/videos/NacktskitourHengst2-00.00.40.656-00.01.01.733.webm</video:content_loc>
-    </video:video>
-  </url>
+ <url>
+  <loc>https://nacktiv.github.io/videos</loc>
+  <lastmod>2025-10-15</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.7</priority>
+  <video:video>
+    <video:thumbnail_loc>https://nacktiv.github.io/videos/beispielvideo_thumbnail.jpg</video:thumbnail_loc>
+    <video:title>Sportliche FKK-Skitour: Freiheit in der Natur</video:title>
+    <video:description>Ein künstlerisches Video einer FKK-Skitour, das Sport, Bewegung und Freiheit in der Natur vereint. Ausdrucksstarke Körperlichkeit beim Skifahren abseits der Pisten.</video:description>
+    <video:content_loc>https://nacktiv.github.io/videos/NacktskitourHengst2-00.00.40.656-00.01.01.733.webm</video:content_loc>
+    <video:duration>22</video:duration>
+    <video:tag>FKK</video:tag>
+    <video:tag>Sport</video:tag>
+    <video:tag>Skitour</video:tag>
+    <video:tag>Bewegung</video:tag>
+    <video:tag>Natur</video:tag>
+  </video:video>
+</url>
 
   <!-- Bildgalerie -->
   <url>
