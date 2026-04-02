@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Nacktiv – Bilder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Bildergalerie</h1>
+
+<div class="gallery">
+  <img src="bild1.jpg" alt="Bild 1">
+  <img src="bild2.jpg" alt="Bild 2">
+  <img src="bild3.jpg" alt="Bild 3">
+  <img src="bild4.jpg" alt="Bild 4">
+</div>
+
+</body>
+</html>
